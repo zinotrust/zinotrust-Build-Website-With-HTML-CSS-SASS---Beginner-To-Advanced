@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    .container {
+        height: 100vh;
+        background: linear-gradient(to right bottom, orangered, green);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .child {
+        width: 75%;
+        height: 60%;
+        border: 1px solid #eee;
+        text-align: center;
+        color: #eee;
+        background: linear-gradient(110deg,
+        rgba(0,0,0,.5) 0%,
+        rgba(0,0,0,.5) 60%,
+        transparent 60%),
+        url(images/laptop.jpg);
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="child">
+            <h1>Primary Heading</h1>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            color: purple;
+            position: relative;
+            /* text-align: center; */
+        }
+
+        h2::before {
+            content: "";
+            position: absolute;
+            top: 120%;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Primary Heading</h2>
+    </div>
+</body>
+</html>

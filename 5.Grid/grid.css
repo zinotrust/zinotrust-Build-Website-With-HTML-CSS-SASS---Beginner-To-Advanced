@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+}
+
+.about {
+    width: 100%;
+    background-color: #0099ff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    row-gap: 10px;
+}
+
+.container > div {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    
+}
+
+.container h2 {
+    color: orangered;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.container > div:nth-child(odd) {
+    background-color: #eee;
+}
+
+.container > div:nth-child(even) {
+    background-color: #dde2eb;
+}

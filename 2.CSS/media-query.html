@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            font-size: 50px;
+            color: red;
+        }
+
+        /* Media query syntax */
+        /* Max-width: devices less than the specified value */
+        /* min-width: devices greater than the specified value  */
+        @media screen and (max-width: 1024px) {
+            div {
+                font-size: 25px;
+                color: blue;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            div {
+                font-size: 25px;
+                color: orangered;
+            }
+        }
+
+        @media screen and (max-width: 425px) {
+            div {
+                font-size: 25px;
+                color: green;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Hello World!!!</p>
+    </div>
+</body>
+</html>

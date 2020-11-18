@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container img {
+            width: 30%;
+            transform: scale();
+            transition: all 1s;
+        }
+        .container img:hover {
+           /* transform: scaleX(2); */
+           /* transform: scaleY(2); */
+           transform: scale(.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./images/laptop.jpg" alt="">
+    </div>
+</body>
+</html>

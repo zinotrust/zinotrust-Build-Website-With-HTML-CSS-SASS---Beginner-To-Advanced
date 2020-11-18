@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            padding: 10px 20px;
+            background-color: purple;
+            color: white;
+            transition: all .5s;
+        }
+        button:hover {
+            background-color: orangered;
+        }
+
+        .container {
+            font-size: 16px;
+            height: 50px;
+            width: 100px;
+            background-color: red;
+            color: #fff;
+            cursor: pointer;
+            /* transition-property: width;
+            transition-duration: 1s;
+            transition-timing-function: cubic-bezier(.25,1.59,1,-0.39);
+            transition-delay: 1s; */
+            transition: all 1s cubic-bezier(.25,1.59,1,-0.39) 1s;
+        }
+        .container:hover {
+            width: 300px;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <button>Get Started</button>
+
+    <div class="container">
+        <p>Hello World</p>
+    </div>
+</body>
+</html>
