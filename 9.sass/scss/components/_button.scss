@@ -1,0 +1,22 @@
+.intro-btn {
+
+    .btn1 {
+        @extend %btn;
+
+        &:hover {
+            color: $color-white;
+            background-color: darken($color-primary, 10%);
+        }
+    }
+
+    .btn2 {
+        @extend %btn;
+        color: $color-white;
+        background-color: darken($color-secondary, 10%);
+
+        &:hover {
+            color: $color-white;
+            background-color: darken($color-secondary, 20%);
+        }
+    }
+}

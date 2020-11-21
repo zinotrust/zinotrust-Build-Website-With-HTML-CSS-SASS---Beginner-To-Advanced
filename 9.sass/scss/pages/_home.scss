@@ -1,0 +1,18 @@
+// INTRO SECTION
+.intro {
+
+    &-content {
+        // padding: 2rem;
+        background-color: $color-white;
+    }
+
+    &-text {
+        p {
+            font-size: 1.6rem;
+            text-align: justify;
+            padding-bottom: 1rem;
+        }
+    }
+
+    
+}

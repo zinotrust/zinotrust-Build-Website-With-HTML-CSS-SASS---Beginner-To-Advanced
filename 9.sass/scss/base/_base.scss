@@ -1,0 +1,32 @@
+// GLOBAL STYLES
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: $font-stack;
+}
+
+body {
+    background-color: $color-primary;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    color: $color-dark;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
