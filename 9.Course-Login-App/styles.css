@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #9d0191;
+    --color-sec: #db6400;
+    --color-grey: #eee;
+    --color-dark-grey: #222831;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right bottom,
+        var(--color-sec), var(--color-primary));
+    padding: 10rem .5rem;
+}
+
+.container {
+    max-width: 500px;
+    background-color: #fff;
+    padding: 2rem 0;
+    margin: 0 auto;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+header h1 {
+    display: block;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 5rem;
+    color: var(--color-primary);
+}
+
+header input[type=radio] {
+    display: none;
+}
+
+header nav {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #eee;
+    background-color: var(--color-grey);
+    z-index: 1;
+}
+
+header nav label {
+    font-size: 1.4rem;
+    font-weight: 500;
+    position: relative;
+    color: car(--color-dark-grey);
+    cursor: pointer;
+}
+
+header nav label i {
+    padding-right: .5rem;
+    color: var(--color-sec);
+}
+
+header nav .slide {
+    position: absolute;
+    top: 0;
+    left: 6%;
+    width: 23%;
+    height: 100%;
+    padding: 0 1rem;
+    background-color: var(--color-primary);
+    border-radius: 3px;
+    z-index: -1;
+    transition: all .3s;
+}
+
+#register:checked ~ nav .slide {
+    left: 38%;
+}
+
+#reset:checked ~ nav .slide {
+    left: 74%;
+}
+
+#login:checked ~ nav label.login,
+#register:checked ~ nav label.register,
+#reset:checked ~ nav label.reset {
+    color: #fff;
+}
+
+
+/* CONTENT SECTIONS */
+.content {
+    display: none;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+#login:checked ~ section .content-login {
+    display: block;
+}
+
+#register:checked ~ section .content-register {
+    display: block;
+}
+
+#reset:checked ~ section .content-reset {
+    display: block;
+}
+
+/* FORM STYLES */
+.content > i {
+    font-size: 3rem;
+    color: var(--color-sec);
+    border: 2px solid;
+    padding: .8rem;
+    border-radius: 5rem;
+}
+
+.content h2 {
+    font-size: 2rem;
+    line-height: 2.5;
+    padding: 0 1rem;
+    position: relative;
+}
+
+.content h2::before {
+    content: "";
+    position: absolute;
+    left: 31%;
+    top: 50%;
+    width: 10%;
+    height: 1px;
+    background-color: var(--color-dark-grey);
+    transform: translateY(-50%);
+}
+
+.content h2::after {
+    content: "";
+    position: absolute;
+    right: 31%;
+    top: 50%;
+    width: 10%;
+    height: 1px;
+    background-color: var(--color-dark-grey);
+    transform: translateY(-50%);
+}
+
+.content form {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.content label {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.content form label input {
+    display: block;
+    width: 100%;
+    padding: 1.3rem 3rem;
+    border: 1px solid transparent;
+    border-bottom: 2px solid rgba(0,0,0,.4);
+    background-color: rgba(0,0,0,.1);
+    border-radius: 10px 0 10px 0;
+    outline: none;
+    color: var(--color-dark-grey);
+    margin-bottom: 2rem;
+    transition: all .3s;
+}
+
+.content form i {
+    position: absolute;
+    left: 1rem;
+    top: 1.5rem;
+    font-size: 1.3rem;
+    color: var(--color-sec);
+}
+
+.content form label input:focus:invalid {
+    font-size: 1.6rem;
+    border-bottom: 2px solid var(--color-sec);
+}
+
+.content form label input:valid {
+    font-size: 1.6rem;
+    border-bottom: 2px solid green;
+    background-color: #E8F0FE;
+}
+
+::placeholder {
+    color: var(--color-dark-grey);
+    font-size: 1.5rem;
+}
+
+.content .logged {
+    display: block;
+    text-align: left;
+    transform: translateY(-1rem);
+    font-size: 1.2rem;
+}
+
+.btn {
+    padding: 1rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background-color: var(--color-sec);
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 1rem 4rem rgba(0,0,0,.3);
+    transition: all .3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    background-color: var(--color-primary);
+}
